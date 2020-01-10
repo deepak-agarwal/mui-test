@@ -1,0 +1,71 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "NOTE",
+    "MAYBE",
+    "WTF",
+    "DONTMERGE"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "foreground": "#000000",
+      "background": "#FFFF00",
+      "iconColour": "#FFFF00",
+      "rulerColour": "#FFFF00",
+      "icon": "pin"
+    },
+    "FIXME": {
+      "foreground": "#000000",
+      "background": "#FF0000",
+      "iconColour": "#FF0000",
+      "rulerColour": "#FF0000",
+      "icon": "flame"
+    },
+    "NOTE": {
+      "foreground": "#FFFFFF",
+      "background": "transparent",
+      "iconColour": "#FFFFFF",
+      "rulerColour": "#FFFFFF",
+      "icon": "note"
+    },
+    "MAYBE": {
+      "foreground": "#000000",
+      "background": "#0099FF",
+      "iconColour": "#0099FF",
+      "rulerColour": "#0099FF",
+      "icon": "beaker"
+    },
+    "WTF": {
+      "foreground": "#FFFFFF",
+      "background": "#7700CC",
+      "iconColour": "#AA00FF",
+      "rulerColour": "#AA00FF",
+      "icon": "squirrel"
+    },
+    "DONTMERGE": {
+      "foreground": "#FF0000",
+      "background": "#000000",
+      "iconColour": "#FF0000",
+      "rulerColour": "#FF0000",
+      "icon": "circle-slash"
+    }
+  },
+  "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|/* |^)\\s*($TAGS)|^\\s*- \\[ \\])",
+  "todo-tree.tree.showCountsInTree": true
+}

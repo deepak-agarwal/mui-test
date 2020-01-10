@@ -1,5 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+/@types_generated
+
+# environment variables
+.env
+
+# cdk
+.cdk*
+cdk.out
+cdk.lambdas
+
 # dependencies
 /node_modules
 /.pnp
@@ -12,11 +22,13 @@
 /build
 
 # misc
+.sfdx
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.eslintcache
 
 npm-debug.log*
 yarn-debug.log*

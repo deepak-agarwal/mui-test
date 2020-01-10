@@ -1,0 +1,38 @@
+---
+root: true
+env:
+  browser: true
+  jest/globals: true
+  es6: true
+  node: true
+parser: "@typescript-eslint/parser"
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:react/recommended
+plugins:
+  - "@typescript-eslint"
+  - jest
+  - react-hooks
+settings:
+  react:
+    version: detect
+rules:
+  react/prop-types: off
+  react-hooks/rules-of-hooks: error
+  react-hooks/exhaustive-deps: warn
+  "@typescript-eslint/no-explicit-any": off
+  no-warning-comments:
+    - error
+    - terms:
+        - DONTMERGE
+      location: anywhere
+  "@typescript-eslint/explicit-function-return-type": off
+  "@typescript-eslint/no-unused-vars":
+    - warn
+    - args: all
+      argsIgnorePattern: "^_"
+  "@typescript-eslint/camelcase":
+    - error
+    - allow:
+        - "^npm_package"

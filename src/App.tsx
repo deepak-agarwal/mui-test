@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider, CssBaseline, TextField } from '@material-ui/core';
+import { theme } from './themes';
+// import { SalesforceSansRegular } from './themes/salesforce';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export const App: React.FC = () => (
+  <>
+    {/* NOTE: uncomment this to get the font to work */}
+    {/* <SalesforceSansRegular /> */}
+    <CssBaseline>
+      <ThemeProvider theme={theme}>
+        <TextField
+          label="Input Label"
+          placeholder="Placeholder Text"
+          required
+        />
+      </ThemeProvider>
+    </CssBaseline>
+  </>
+);
